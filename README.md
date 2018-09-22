@@ -1,2 +1,5 @@
+![image](https://user-images.githubusercontent.com/5803001/45917824-f2641680-beaf-11e8-8076-b0f139d88270.png)
+
 # design-pattern-snippets
-Code Snippets of DesignPattern Implementations for Several Programming Language: Java, JavaScript, Go, Python, Rust, etc.  :dizzy: 多语言版本的设计模式实现。
+
+design-pattern-snippets 是 [coding-snippets](https://github.com/wxyyxc1992/coding-snippets) 的重要组成部分。
