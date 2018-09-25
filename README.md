@@ -15,3 +15,7 @@ design-pattern-snippets 是 [coding-snippets](https://github.com/wxyyxc1992/codi
 | [Factory Method](/creational/factory.md) | Defers instantiation of an object to a specialized function for creating instances | ✔ |
 | [Object Pool](/creational/object-pool.md) | Instantiates and maintains a group of objects instances of the same type | ✔ |
 | [Singleton](/creational/singleton.md) | Restricts instantiation of a type to one object | ✔ |
+
+# Concurrency | 并发模式
+
+# I/O | 输入输出模式
