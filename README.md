@@ -10,9 +10,15 @@ design-pattern-snippets 是 [coding-snippets](https://github.com/wxyyxc1992/codi
 
 All snippets in this repo are classified into different languages and different categories: Object Oriented Programming, Functional Programming, Concurrent Programming, etc.
 
-# Object Oriented Programming
+![image](https://user-images.githubusercontent.com/5803001/51801467-483f3580-2279-11e9-8668-f57d002b58f2.png)
 
-## Creational Patterns | 创建型模式
+# Nav | 导航
+
+![image](https://user-images.githubusercontent.com/5803001/51801467-483f3580-2279-11e9-8668-f57d002b58f2.png)
+
+## Object Oriented Programming
+
+### Creational Patterns | 创建型模式
 
 |                    Pattern/模式                     | Description/描述                                                                   | Implementation/实现 |
 | :-------------------------------------------------: | :--------------------------------------------------------------------------------- | :-----------------: |
@@ -22,8 +28,8 @@ All snippets in this repo are classified into different languages and different 
 |      [Object Pool](/creational/object-pool.md)      | Instantiates and maintains a group of objects instances of the same type           |          ✔          |
 |        [Singleton](/creational/singleton.md)        | Restricts instantiation of a type to one object                                    |          ✔          |
 
-# Concurrency | 并发模式
+## Concurrency | 并发模式
 
-# I/O | 输入输出模式
+## I/O | 输入输出模式
 
-# Functional Programming | 函数式编程
+## Functional Programming | 函数式编程
