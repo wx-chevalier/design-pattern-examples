@@ -6,30 +6,38 @@ In software engineering, a design pattern is a reusable solution for commonly oc
 
 design-pattern-snippets 是 [coding-snippets](https://github.com/wxyyxc1992/coding-snippets) 的重要组成部分，
 
-![](https://user-images.githubusercontent.com/5803001/36413335-ddd675f0-1658-11e8-9326-4f4eb7aace4e.png)
-
 All snippets in this repo are classified into different languages and different categories: Object Oriented Programming, Functional Programming, Concurrent Programming, etc.
-
-![image](https://user-images.githubusercontent.com/5803001/51801467-483f3580-2279-11e9-8668-f57d002b58f2.png)
 
 # Nav | 导航
 
-![image](https://user-images.githubusercontent.com/5803001/51801467-483f3580-2279-11e9-8668-f57d002b58f2.png)
+## Object Oriented Programming Design Pattern | 面向对象的设计模式
 
-## Object Oriented Programming
+| [Cpp](./cpp/oop) | [Go](./go/oop) | [Java](./java/oop) | [JavaScript](./js/oop) | [Python](./python/oop) | [Rust](./rust/oop) | [TypeScript](./ts/oop) |
+| ---------------- | -------------- | ------------------ | ---------------------- | ---------------------- | ------------------ | ---------------------- |
 
-### Creational Patterns | 创建型模式
 
-|                    Pattern/模式                     | Description/描述                                                                   | Implementation/实现 |
-| :-------------------------------------------------: | :--------------------------------------------------------------------------------- | :-----------------: |
-| [Abstract Factory](/creational/abstract_factory.md) | Provides an interface for creating families of releated objects                    |      [Go](./)       |
-|          [Builder](/creational/builder.md)          | Builds a complex object using simple objects                                       |          ✔          |
-|      [Factory Method](/creational/factory.md)       | Defers instantiation of an object to a specialized function for creating instances |          ✔          |
-|      [Object Pool](/creational/object-pool.md)      | Instantiates and maintains a group of objects instances of the same type           |          ✔          |
-|        [Singleton](/creational/singleton.md)        | Restricts instantiation of a type to one object                                    |          ✔          |
+[![image.png](https://i.postimg.cc/13fB6XPX/image.png)](https://postimg.cc/tsGFGXsG)
 
-## Concurrency | 并发模式
+## Concurrency Design Pattern | 并发模式
+
+| [Cpp](./cpp/concurrency) | [Go](./go/concurrency) | [Java](./java/concurrency) | [JavaScript](./js/concurrency) | [Python](./python/concurrency) | [Rust](./rust/concurrency) | [TypeScript](./ts/concurrency) |
+| ------------------------ | ---------------------- | -------------------------- | ------------------------------ | ------------------------------ | -------------------------- | ------------------------------ |
+
+
+[![image.png](https://i.postimg.cc/h4JgRZVv/image.png)](https://postimg.cc/z314njtY)
+
+## Functional Programming | 函数式编程
+
+| [Cpp](./cpp/concurrency) | [Go](./go/concurrency) | [Java](./java/concurrency) | [JavaScript](./js/concurrency) | [Python](./python/concurrency) | [Rust](./rust/concurrency) | [TypeScript](./ts/concurrency) |
+| ------------------------ | ---------------------- | -------------------------- | ------------------------------ | ------------------------------ | -------------------------- | ------------------------------ |
+
 
 ## I/O | 输入输出模式
 
-## Functional Programming | 函数式编程
+| [Cpp](./cpp/concurrency) | [Go](./go/concurrency) | [Java](./java/concurrency) | [JavaScript](./js/concurrency) | [Python](./python/concurrency) | [Rust](./rust/concurrency) | [TypeScript](./ts/concurrency) |
+| ------------------------ | ---------------------- | -------------------------- | ------------------------------ | ------------------------------ | -------------------------- | ------------------------------ |
+
+
+# About
+
+![image](https://user-images.githubusercontent.com/5803001/51801467-483f3580-2279-11e9-8668-f57d002b58f2.png)
