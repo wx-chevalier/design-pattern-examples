@@ -6,7 +6,7 @@ In software engineering, a design pattern is a reusable solution for commonly oc
 
 All snippets in this repo are classified into different languages and different categories: Object Oriented Programming, Functional Programming, Concurrent Programming, etc.
 
---
+---
 
 design-pattern-snippets 是 [coding-snippets](https://github.com/wxyyxc1992/coding-snippets) 的重要组成部分，
 
