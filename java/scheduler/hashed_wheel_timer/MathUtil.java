@@ -13,16 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.spikhalskiy.hashedwheeltimer;
+package scheduler.hashed_wheel_timer;
 
-/**
- * Functional interface to represent a work that should be executed by {@link HashedWheelTimer} on timeout.
- */
-public interface Task {
+class MathUtil {
     /**
-     * @param timer {@link Timer} instance caused triggering of this method. Could assume that this timer is in
-     * {@link Timer.TimerState#EXPIRED} state if this call triggered by {@link HashedWheelTimer}. Could be used for
-     * rescheduling for example.
+     *
+     * @param p to delete
+     * @param q should be positive
+     * @return division result with rounding
      */
-    void run(Timer timer);
+    protected static long divWithRound(long p, long q) {
+        long div = p / q;
+        long floor;
+        long ceil;
+        if (p >= 0) {
+            floor = q * div;
+            ceil = floor + q;
+            return (ceil - p >= p - floor) ? div : div + 1;
+        } else {
+            ceil = q * div;
+            floor = ceil - q;
+            return (ceil - p <= p - floor) ? div : div - 1;
+
+        }
+
+    }
 }

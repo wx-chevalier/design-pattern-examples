@@ -13,8 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.spikhalskiy.hashedwheeltimer;
+package scheduler.hashed_wheel_timer;
 
-interface BooleanSupplier {
-    boolean getAsBoolean();
+/**
+ * Functional interface to represent a work that should be executed by {@link HashedWheelTimer} on timeout.
+ */
+public interface Task {
+    /**
+     * @param timer {@link Timer} instance caused triggering of this method. Could assume that this timer is in
+     * {@link Timer.TimerState#EXPIRED} state if this call triggered by {@link HashedWheelTimer}. Could be used for
+     * rescheduling for example.
+     */
+    void run(Timer timer);
 }

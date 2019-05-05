@@ -13,9 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.spikhalskiy.hashedwheeltimer;
-
-import com.spikhalskiy.hashedwheeltimer.Timer.TimerState;
+package scheduler.hashed_wheel_timer;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -265,7 +263,7 @@ public class HashedWheelTimer {
 
             if (0 >= timer.remainingRounds) {
                 timer.remove();
-                timer.state = TimerState.EXPIRED;
+                timer.state = Timer.TimerState.EXPIRED;
                 ++timersExpired;
                 timer.task.run(timer);
             } else {

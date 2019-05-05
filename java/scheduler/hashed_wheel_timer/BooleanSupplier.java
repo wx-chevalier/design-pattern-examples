@@ -13,29 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.spikhalskiy.hashedwheeltimer;
+package scheduler.hashed_wheel_timer;
 
-class MathUtil {
-    /**
-     *
-     * @param p to delete
-     * @param q should be positive
-     * @return division result with rounding
-     */
-    protected static long divWithRound(long p, long q) {
-        long div = p / q;
-        long floor;
-        long ceil;
-        if (p >= 0) {
-            floor = q * div;
-            ceil = floor + q;
-            return (ceil - p >= p - floor) ? div : div + 1;
-        } else {
-            ceil = q * div;
-            floor = ceil - q;
-            return (ceil - p <= p - floor) ? div : div - 1;
-
-        }
-
-    }
+interface BooleanSupplier {
+    boolean getAsBoolean();
 }

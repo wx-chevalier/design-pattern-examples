@@ -28,7 +28,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.spikhalskiy.hashedwheeltimer;
+package scheduler.hashed_wheel_timer;
 
 /**
  * A {@link NanoClock} delegates to {@link System#nanoTime()}.

@@ -28,7 +28,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.spikhalskiy.hashedwheeltimer;
+package scheduler.hashed_wheel_timer;
 
 /**
  * Functional interface for return the current time as system wide monotonic tick of 1 nanosecond precision.
