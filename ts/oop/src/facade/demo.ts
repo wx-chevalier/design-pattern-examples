@@ -1,4 +1,4 @@
-import { Facade } from './facade';
+import { Facade } from '.';
 
 const facade: Facade = new Facade();
 

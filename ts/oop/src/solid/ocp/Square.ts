@@ -1,8 +1,8 @@
 import ShapeI from './ShapeI';
 
 class Square implements ShapeI {
-  private height;
-  private width;
+  private height: number;
+  private width: number;
 
   constructor(height: number, width: number) {
     this.height = height;

@@ -1,7 +1,8 @@
 import ConnectionInterface from './ConnectionInterface';
 
 export default class PasswordReminder {
-  private db;
+  private db: ConnectionInterface;
+
   constructor(db: ConnectionInterface) {
     this.db = db;
   }

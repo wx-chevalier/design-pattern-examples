@@ -25,6 +25,7 @@ const report = new SalesReporter(new SalesRepository());
 const htmlReport = report.between<string>(1, 2, new HtmlOutput());
 const jsonReport = report.between<object>(3, 5, new JsonOutput());
 console.group('reports', htmlReport, jsonReport);
+console.groupEnd();
 
 const checkout = new Checkout();
 const cash = checkout.begin(12, new CashPaymentMethod());
@@ -38,15 +39,19 @@ const areas = calculateArea.calculate([
   new Square(10, 10),
 ]);
 console.group('areas', areas);
+console.groupEnd();
 
 const dbLessons = getAll(new DbLessonRepository());
 const fileLessons = getAll(new FilesLessonRepository());
 console.group('lessons', dbLessons, fileLessons);
+console.groupEnd();
 
 const captain = new Captain();
 const manageAndroid = captain.manage(new AndroidWorker());
 const manageHuman = captain.manage(new HumanWorker());
 console.group('manage', manageAndroid, manageHuman);
+console.groupEnd();
 
 const passwordRemainder = new PasswordReminder(new MySqlConnection());
 console.group('passwordRemainder', passwordRemainder.reminder());
+console.groupEnd();
