@@ -1,8 +1,3 @@
-import SalesReporter from './srp/SalesReporter';
-import SalesRepository from './srp/SalesRepository';
-import HtmlOutput from './srp/HtmOutput';
-import JsonOutput from './srp/JsonOutput';
-
 import Checkout from './ocp/Checkout';
 import CashPaymentMethod from './ocp/CashPaymentMethod';
 import BitcoinPaymentMethod from './ocp/BitcoinPaymentMethod';
@@ -20,12 +15,6 @@ import AndroidWorker from './isp/AndroidWorker';
 import HumanWorker from './isp/HumanWorker';
 import PasswordReminder from './dip/PasswordReminder';
 import MySqlConnection from './dip/MySqlConnection';
-
-const report = new SalesReporter(new SalesRepository());
-const htmlReport = report.between<string>(1, 2, new HtmlOutput());
-const jsonReport = report.between<object>(3, 5, new JsonOutput());
-console.group('reports', htmlReport, jsonReport);
-console.groupEnd();
 
 const checkout = new Checkout();
 const cash = checkout.begin(12, new CashPaymentMethod());

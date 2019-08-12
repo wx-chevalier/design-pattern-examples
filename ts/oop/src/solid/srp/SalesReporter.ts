@@ -1,5 +1,5 @@
 import SalesRepository from './SalesRepository';
-import SalesOutputI from './SalesOutputI';
+import SalesOutputI from './ISalesOutput';
 
 class SalesReporter {
   private repo: SalesRepository;
@@ -7,10 +7,10 @@ class SalesReporter {
   constructor(repo: SalesRepository) {
     this.repo = repo;
   }
-  between<T>(start: number, end: number, formatter: SalesOutputI<T>) : T {
-    const sales = this.repo.between(start,end);
+  between<T>(start: number, end: number, formatter: SalesOutputI<T>): T {
+    const sales = this.repo.between(start, end);
     return formatter.output(sales);
-  } 
+  }
 }
 
 export default SalesReporter;
