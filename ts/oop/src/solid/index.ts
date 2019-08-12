@@ -1,7 +1,3 @@
-import Checkout from './ocp/Checkout';
-import CashPaymentMethod from './ocp/CashPaymentMethod';
-import BitcoinPaymentMethod from './ocp/BitcoinPaymentMethod';
-
 import AreaCalculator from './ocp/AreaCalculator';
 import Square from './ocp/Square';
 import Circle from './ocp/Circle';
@@ -15,11 +11,6 @@ import AndroidWorker from './isp/AndroidWorker';
 import HumanWorker from './isp/HumanWorker';
 import PasswordReminder from './dip/PasswordReminder';
 import MySqlConnection from './dip/MySqlConnection';
-
-const checkout = new Checkout();
-const cash = checkout.begin(12, new CashPaymentMethod());
-const bitcoin = checkout.begin(1555, new BitcoinPaymentMethod());
-console.group('payments', cash, bitcoin);
 
 const calculateArea = new AreaCalculator();
 const areas = calculateArea.calculate([

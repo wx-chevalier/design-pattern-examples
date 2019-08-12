@@ -1,4 +1,4 @@
-import PaymentMethod from './PaymentMethodI';
+import PaymentMethod from './IPaymentMethod';
 
 class Checkout {
   begin(cost: number, payment: PaymentMethod): string {

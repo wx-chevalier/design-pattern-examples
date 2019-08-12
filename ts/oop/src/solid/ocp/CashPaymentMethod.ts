@@ -1,4 +1,4 @@
-import PaymentMethod from './PaymentMethodI';
+import PaymentMethod from './IPaymentMethod';
 
 class CashPaymentMethod implements PaymentMethod {
   acceptPayment(total: number): string {

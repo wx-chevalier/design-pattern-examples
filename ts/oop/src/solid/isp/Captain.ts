@@ -1,7 +1,7 @@
-import { ManageableI } from "./Interface";
+import { IManageable } from './Interface';
 
 export default class Captain {
-  manage(worker: ManageableI) : string {
+  manage(worker: IManageable): string {
     return worker.beManaged();
   }
 }

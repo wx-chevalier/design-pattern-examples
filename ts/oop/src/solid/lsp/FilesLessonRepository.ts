@@ -1,7 +1,7 @@
-import LessonRepositoryI from './LessonRepositoryI';
+import ILessonRepository from './ILessonRepository';
 
-class FilesLessonRepository implements LessonRepositoryI<string> {
-  getAll() : Array<string> {
+class FilesLessonRepository implements ILessonRepository<string> {
+  getAll(): Array<string> {
     return ['file 1', 'file 2'];
   }
 }

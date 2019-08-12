@@ -1,4 +1,4 @@
-import ShapeI from './ShapeI';
+import ShapeI from './IShape';
 
 class Square implements ShapeI {
   private height: number;

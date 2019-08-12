@@ -1,5 +1,5 @@
-import LessonRepositoryI from './LessonRepositoryI';
+import ILessonRepository from './ILessonRepository';
 
-export function getAll<T>(lesson: LessonRepositoryI<T>) : Array<T> {
+export function getAll<T>(lesson: ILessonRepository<T>): Array<T> {
   return lesson.getAll();
 }

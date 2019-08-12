@@ -1,4 +1,4 @@
-import ShapeI from './ShapeI';
+import ShapeI from './IShape';
 
 class Circle implements ShapeI {
   private radius: number;

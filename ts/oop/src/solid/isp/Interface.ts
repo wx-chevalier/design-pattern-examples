@@ -1,11 +1,11 @@
-export interface WorkableI {
+export interface IWorkable {
   work(): string;
 }
 
-export interface SleepableI {
+export interface ISleepable {
   sleep(): string;
 }
 
-export interface ManageableI {
+export interface IManageable {
   beManaged(): string;
 }

@@ -1,8 +1,8 @@
-import LessonRepositoryI from './LessonRepositoryI';
+import ILessonRepository from './ILessonRepository';
 
-class DbLessonRepository implements LessonRepositoryI<object> {
-  getAll() : Array<object> {
-    return [{name: 'data 1'},{name: 'file 2'}];
+class DbLessonRepository implements ILessonRepository<object> {
+  getAll(): Array<object> {
+    return [{ name: 'data 1' }, { name: 'file 2' }];
   }
 }
 

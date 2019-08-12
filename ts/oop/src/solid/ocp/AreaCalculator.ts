@@ -1,4 +1,4 @@
-import Shape from './ShapeI';
+import Shape from './IShape';
 
 class AreaCalculator {
   calculate(shapes: Shape[]) {
