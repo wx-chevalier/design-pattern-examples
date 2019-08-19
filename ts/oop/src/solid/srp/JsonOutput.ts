@@ -1,6 +1,6 @@
-import SalesOutputI from './ISalesOutput';
+import ISalesOutput from './ISalesOutput';
 
-class JsonOutput implements SalesOutputI<object> {
+class JsonOutput implements ISalesOutput<object> {
   output(sales: Array<string>): object {
     return { key: sales };
   }

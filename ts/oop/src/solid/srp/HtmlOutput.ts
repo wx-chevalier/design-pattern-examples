@@ -1,6 +1,6 @@
-import SalesOutputI from './ISalesOutput';
+import ISalesOutput from './ISalesOutput';
 
-class HtmlOutput implements SalesOutputI<string> {
+class HtmlOutput implements ISalesOutput<string> {
   output(sales: Array<string>): string {
     return `<h1>html output ${sales.join()}<s/h1>`;
   }
