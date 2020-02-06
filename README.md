@@ -8,7 +8,7 @@ All snippets in this repo are classified into different languages and different 
 
 ---
 
-design-pattern-snippets 是 [coding-snippets](https://github.com/wxyyxc1992/coding-snippets) 的重要组成部分，
+design-pattern-snippets 是 [coding-snippets](https://github.com/wxyyxc1992/coding-snippets) 的重要组成部分，本仓库关联的文档参阅《[编程范式与设计模式系列笔记](https://github.com/wx-chevalier/DesignPattern-Series)》
 
 # Nav | 导航
 
